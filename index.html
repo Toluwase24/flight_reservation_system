@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="../CSS_Files/styles.css" rel="stylesheet">
+<link href="../CSS_Files/main.css" rel="stylesheet">
+
+<title>Caman Airlines</title>
+
+</head>
+
+<body>
+
+<div class="navbar">
+	<h2>Caman</h2>
+  <a class="active" href="../HTML_Files/main.html">Home</a>
+  <!-- <a href="../HTML_Files/booking-form.html">Booking</a> -->
+  <a href="../HTML_Files/My_Trips.php">My Trips</a>
+  <a href="../HTML_Files/signup.html">Sign Up</a>
+  <a href="../HTML_Files/login.html">Login</a>
+</div>
+
+<div class="main">
+	<div class="booking-container">
+		<div class="form-row">
+            <form action="../component_php_files/form_insert.php" method="post" class="form-group">
+				<div id="form">
+				<h1 class="welcome">Welcome to Caman Airlines</h1>
+				  <h2 class="text-center">Begin Booking Here</h2>
+				<div id="input-container">
+					<h3 class="booking-details">Booking Details</h3>
+		
+					<input class="form__input" type="text" id="input-group" placeholder="From" />
+					<input class="form__input" type="text" id="input-group" placeholder="To" />
+				  </div>
+
+				<div id="fare-container">
+					<span id="input-group" class="fare-text">Select Your Fare</span>
+					<input type="radio" id="input-group" name="r" />
+					<label class="radio-option" for="input-group">One Way</label>
+					<input type="radio" id="input-group" name="r" />
+					<label class="radio-option" for="input-group">Round Trip</label>
+				</div>
+
+				  <div class="time-containers">
+					<div id="departure-container">
+					<small class="departure-header" style="text-align: center">Departure:</small>
+			
+						<input
+						class="text-box single-line ea-triggers-bound valid"
+						data-val="true"
+						data-val-date="The field Departure Date must be a date."
+						data-val-expirationdaterequired="When the line is escrowed Departure Date is required."
+						data-val-expirationdaterolled="You cannot roll Departure date forward equal to or greater than the 
+								policy term."
+						id="Departure"
+						name="Departure"
+						type="date"
+						aria-describedby="Departure_Date-error"
+						aria-invalid="false"
+						/>
+			
+						<input class="time-class" type="time" id="hasta" placeholder="Departure Time" />
+					</div>
+
+					<div id="arrival-container">
+						<small class="arrival-header" style="text-align: center">Arrival:</small>
+						<input class="text-box single-line ea-triggers-bound valid" data-val="true"
+							data-val-date="The field Arrival Date must be a date."
+							data-val-expirationdaterequired="When the line is escrowed Arrival Date is required."
+							data-val-expirationdaterolled="You cannot roll Arrival date forward equal to or greater than the 
+											policy term." id="Arrival" name="Arrival" type="date" aria-describedby="Arrival_Date-error"
+							aria-invalid="false" />
+					
+						<input class="time-class" type="time" id="hasta" placeholder="Arrival Time" />
+					</div>
+				</div>
+
+		
+				  <div id="preference-container">
+					<select id="input-group" style="background: #eeeeee">
+					  <option value="">Preferred Time of Flight</option>
+					  <option value="">Morning</option>
+					  <option value="">Afternoon</option>
+					  <option value="">Evening</option>
+					  <option value="">Night</option>
+					</select>
+					<select id="input-group" style="background: #eeeeee">
+					  <option value="">Preferred Seating</option>
+					  <option value="">Economy Class</option>
+					  <option value="">Business Class</option>
+					  <option value="">First Class</option>
+					</select>
+				  </div>
+		
+				  <div id="input-container">
+					<input class="form__input" type="number" id="input-group" placeholder="Adult" />
+					<input class="form__input" type="number" id="input-group" placeholder="Children(2-11years)" />
+					<input class="form__input" type="number" id="input-group" placeholder="infant(under 2years)" />
+				  </div>
+		
+				  <div id="input-container">
+					<h3 class="text-white">Personal Details</h3>
+				 
+					<input class="form__input" type="text" id="input-group" name="full_name" placeholder="Full Name" />
+					<input class="form__input" type="number" id="input-group" name="phone_number" placeholder="Phone Number" />
+					<input class="form__input" type="email" id="input-group1" placeholder="Email" />
+				  </div>
+				  <button type="submit" value="Submit" class="btn btn-warning">Submit Form</button>
+				  <button type="reset" class="btn btn-primary">Clear Form</button>
+				</div>
+			  </form>
+		</div>
+	</div>
+</div>
+
+
+
+</body>

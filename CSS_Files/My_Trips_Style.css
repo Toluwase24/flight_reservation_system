@@ -1,0 +1,30 @@
+body {
+    background-image: url(../Image_Files/background.jpg);
+    background-size: cover;
+}
+
+.form-row {
+    padding-left: 30%;
+}
+
+.Trip-Search {
+    padding: 42px 38px;
+    background-color: var(--green);
+    }
+
+#table-host {
+    padding-left: 10%;
+    width: 80%;
+}
+
+#My-trip-display {
+    padding-left: 0%;
+    background-color: white;
+    border: 1px solid;
+    width: 100%;
+}
+
+#My-trip-display, th, td {
+    border: 1px solid;
+    text-align: center;
+}

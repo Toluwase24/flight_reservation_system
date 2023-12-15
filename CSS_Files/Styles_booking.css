@@ -1,0 +1,108 @@
+body{
+    background-image: url(/Image_Files/airplane3.jpg);
+    background-size: cover;
+}
+.text-primary {
+    color: #000 !important;
+    font-size: 20px !important;
+}
+#form{
+    /* background-color: #000; */
+    background-color: #68754a;
+    height:600px;
+    width:700px;
+    margin:auto;
+    padding:20px;
+    opacity: 0.7;
+}
+#form h3{
+    border-bottom: 2px solid #3399ff;
+    width:210px;
+    padding: 5px;
+}
+::placeholder{
+    color:#000;
+}
+#input-group {
+    background-color: white;
+}
+
+#input #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    /* background: transparent; */
+    color:#fff;
+}
+#input2 #input-group{
+    width:195px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    /* background: transparent; */
+    /* color:#fff; */
+    color:#000;
+}
+#input3 #input-group{
+    margin-left: 50px;
+    background: transparent;
+}
+
+#input4 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    /* background: transparent; */
+     /* color:#fff; */
+     color:#000;
+}
+#input4 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    /* background: transparent; */
+     /* color:#fff; */
+     color:#000;
+}
+#input5 h3{
+    border-bottom: 2px solid #3399ff;
+    width:220px;
+    padding: 5px;
+}
+#input6 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    /* background: transparent; */
+     /* color:#fff; */
+     color:#000;
+}
+#input6 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    /* background: transparent; */
+     /* color:#fff; */
+     color:#000;
+}
+.btn-warning{
+    background-color: #d55100;
+    outline: none;
+}

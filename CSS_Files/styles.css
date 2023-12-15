@@ -1,0 +1,76 @@
+:root {
+	/* Palette Colors */
+	--green: #68754a;
+	--drk-green: #366645;
+	--orange: #d55100;
+	--bright-orange: #ff5733;
+	--gray: #f6f5f1; /*text color*/
+	--drk-gray: #d6d5d2;
+}
+
+body {
+	background-color: white;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {color: var(--drk-gray);}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+  overflow: hidden;
+  background-color: var(--green);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+/*   display: block; */
+  color: var(--gray);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar h2 {
+margin: 0;
+padding: 0 16px;
+text-align: center;
+}
+
+.navbar .active {
+	border-bottom: solid 2px var(--orange);
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: var(--orange);
+}
+
+.btn {
+  border: none;
+  color: var(--gray);
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: var(--orange);
+}
+
+.btn:hover {
+	background-color: var(--bright-orange);
+}

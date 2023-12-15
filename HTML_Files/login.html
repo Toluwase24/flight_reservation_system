@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+         <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="../CSS_Files/styles.css" rel="stylesheet">
+        <link href="../CSS_Files/login.css" rel="stylesheet">
+
+        <title>Caman Airlines - Login</title>
+
+    </head>
+
+    <body>
+
+     <div class="navbar">
+        <h2>Caman</h2>
+        <a href="../HTML_Files/main.html">Home</a>
+        <!-- <a href="../HTML_Files/booking-form.html">Booking</a> -->
+        <a href="../HTML_Files/My_Trips.php">My Trips</a>
+        <a href="../HTML_Files/signup.html">Sign Up</a>
+        <a class="active" href="../HTML_Files/login.html">Login</a>
+     </div>
+    
+     <div class="container">
+        <form method="post" action="../component_php_files/login_form.php" class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group"> 
+                <label for="Username or Email">Username or Email </label> 
+                <input type="text" name="username" class="form__input" autofocus placeholder="Username or Email" required>
+                <div class="form__inpurt-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label for="Password">Password</label>
+                <input type="password" name="password" class="form__input" autofocus placeholder="Password" required>
+                <div class="form__inpurt-error-message"></div>
+            </div>
+            <button class="form__button" type="Submit" value="Submit">Login</button>
+
+            <p class="form__text">
+                <a href="../HTML_Files/signup.html">Don't have account? Create Account</a>
+            </p>
+        </form>
+    </body>
+</html>

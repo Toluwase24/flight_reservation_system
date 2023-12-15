@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMAN BOOKING</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/CSS_Files/Styles_booking.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="../component_php_files/form_insert.php" method="post" class="form-group">
+        <div id="form">
+          <h1 class="text-center">Caman Booking Form</h1>
+          <h3 class="text-white">Booking Details</h3>
+
+          <div id="input4">
+            <input type="text" id="input-group" placeholder="From" />
+            <input type="text" id="input-group" placeholder="To" />
+          </div>
+          <small class="text-primary" style="text-align: center">Departure:</small>
+
+          <div id="input4">
+            <input
+              class="text-box single-line ea-triggers-bound valid"
+              data-val="true"
+              data-val-date="The field Departure Date must be a date."
+              data-val-expirationdaterequired="When the line is escrowed Departure Date is required."
+              data-val-expirationdaterolled="You cannot roll Departure date forward equal to or greater than the 
+                    policy term."
+              id="Departure"
+              name="Departure"
+              type="date"
+              aria-describedby="Departure_Date-error"
+              aria-invalid="false"
+            />
+
+            <input type="time" id="hasta" placeholder="Departure Time" />
+          </div>
+
+          <div id="input">
+            <select id="input-group" style="background: black">
+              <option value="">Preferred Time of Flight</option>
+              <option value="">Morning</option>
+              <option value="">Afternoon</option>
+              <option value="">Evening</option>
+              <option value="">Night</option>
+            </select>
+            <select id="input-group" style="background: black">
+              <option value="">Preferred Seating</option>
+              <option value="">Economy Class</option>
+              <option value="">Business Class</option>
+              <option value="">First Class</option>
+            </select>
+          </div>
+
+          <div id="input2">
+            <input type="number" id="input-group" placeholder="Adult" />
+            <input type="number" id="input-group" placeholder="Children(2-11years)" />
+            <input type="number" id="input-group" placeholder="infant(under 2years)" />
+          </div>
+
+          <div id="input3">
+            <span id="input-group" class="text-primary">Select Your Fare</span>
+            <input type="radio" id="input-group" name="r" />
+            <label class="text-white" for="input-group">One Way</label>
+            <input type="radio" id="input-group" name="r" />
+            <label class="text-white" for="input-group">Round Trip</label>
+          </div>
+
+          <small class="text-primary" style="text-align: center">Arrival:</small>
+
+          <div id="input4">
+            <input
+              class="text-box single-line ea-triggers-bound valid"
+              data-val="true"
+              data-val-date="The field Arrival Date must be a date."
+              data-val-expirationdaterequired="When the line is escrowed Arrival Date is required."
+              data-val-expirationdaterolled="You cannot roll Arrival date forward equal to or greater than the 
+                policy term."
+              id="Arrival"
+              name="Arrival"
+              type="date"
+              aria-describedby="Arrival_Date-error"
+              aria-invalid="false"
+            />
+
+            <input type="time" id="hasta" placeholder="Arrival Time" />
+          </div>
+
+          <div id="input5">
+            <h3 class="text-white">Personal Details</h3>
+          </div>
+
+          <div id="input6">
+            <input type="text" id="input-group" name="full_name" placeholder="Full Name" />
+            <input type="number" id="input-group" name="phone_number" placeholder="Phone Number" />
+            <input type="email" id="input-group1" placeholder="Email" />
+          </div>
+          <button type="submit" value="Submit" class="btn btn-warning text-white">Submit Form</button>
+          <button type="reset" class="btn btn-primary">Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

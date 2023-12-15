@@ -1,0 +1,91 @@
+@import "styles.css";
+
+body {
+    background-image: url(../Image_Files/home-image.jpg) ;
+    background-size: cover;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.main {
+    width: 600px;
+}
+
+.welcome, .text-center {
+    text-align: center;
+    margin-bottom: 0;
+}
+    
+.booking-container {
+    background-color: var(--green);
+    width: 100%;
+    padding: 1.5rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.form-row, #form,
+#input-container,
+#preference-container, 
+#departure-container,
+#arrival-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.time-containers {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+#departure-container {
+    margin-left: 2px;
+}
+
+#departure-container, #arrival-container {
+    width: 50%;
+}
+
+#form,
+#input-container,
+#preference-container,
+#fare-container {
+    margin-bottom: 12px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray);
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.fare-text, .text-white, .booking-details {
+    font-weight: bold;
+    color: black;
+}
+
+.radio-option {
+    color: black;
+    font-weight: 400;
+}
+
+.departure-header, .arrival-header {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+#input-group, .text-box, .time-class {
+    padding: 10px;
+}
